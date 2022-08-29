@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Hello World!"/>
+        android:text="Hello World!" />
 
     <TextView
         android:id="@+id/txthasil2"
@@ -49,10 +49,10 @@
         android:id="@+id/inputNama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Masukkan Nama"
         android:layout_below="@id/txthasil2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:hint="Masukkan Nama"
 
         />
 
@@ -85,6 +85,25 @@
         android:layout_below="@id/btnSimpan"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
+
+        />
+    <Button
+        android:id="@+id/pindahKeBMI"
+        android:layout_below="@id/pindahKeHome"
+        android:layout_centerHorizontal="true"
+        android:text="Pindah ke calculator bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        />
+    <Button
+        android:id="@+id/pindahkeHitungMahasiswa"
+        android:layout_below="@id/pindahKeBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="pindah ke hitung nilai mahasiswa"
 
         />
 
