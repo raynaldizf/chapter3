@@ -7,12 +7,41 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6200ED">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/headerTittle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chapter 3"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
     <TextView
         android:id="@+id/helloWorldMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Hello World!" />
+        android:text="Hasil 1" />
 
     <TextView
         android:id="@+id/txthasil2"
@@ -24,6 +53,7 @@
 
     <Button
         android:id="@+id/buttonMain"
+        android:layout_below="@id/toolbarMain"
         android:layout_marginLeft="150dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,16 +61,16 @@
 
     <Button
         android:id="@+id/buttonMain2"
+        android:layout_below="@id/buttonMain"
         android:layout_marginLeft="150dp"
-        android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Klik Saya 2"/>
 
     <Button
         android:id="@+id/buttonMain3"
+        android:layout_below="@id/buttonMain2"
         android:layout_marginLeft="150dp"
-        android:layout_marginTop="100dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Klik Saya 3"/>
@@ -87,13 +117,14 @@
         android:layout_marginTop="50dp"
 
         />
+
     <Button
         android:id="@+id/pindahKeBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/pindahKeHome"
         android:layout_centerHorizontal="true"
         android:text="Pindah ke calculator bmi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
 
 
         />

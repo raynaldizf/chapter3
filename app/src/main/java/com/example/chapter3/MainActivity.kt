@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var buttonSimpan : Button
     lateinit var textNama : TextView
     lateinit var btnHome : Button
+    lateinit var btnBMI : Button
+    lateinit var btnHitungNilai : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -34,6 +36,8 @@ class MainActivity : AppCompatActivity() {
         setOnclick()
         saveNama()
         intentkeHome()
+        intentKeBMI()
+        intentKeHitungNilaiMahasiswa()
 
     }
     fun setOnclick(){
@@ -58,6 +62,22 @@ class MainActivity : AppCompatActivity() {
 //        Intent : perpindahan dari 1 activity ke activity lainnya
         btnHome.setOnClickListener{
             var pindah = Intent(this,HomeActivity::class.java)
+            startActivity(pindah)
+        }
+    }
+    fun intentKeBMI(){
+        btnBMI = findViewById(R.id.pindahKeBMI)
+//        Intent : perpindahan dari 1 activity ke activity lainnya
+        btnBMI.setOnClickListener{
+            var pindah = Intent(this,KalkulatorBMI::class.java)
+            startActivity(pindah)
+        }
+    }
+    fun intentKeHitungNilaiMahasiswa(){
+        btnHitungNilai = findViewById(R.id.pindahkeHitungMahasiswa)
+//        Intent : perpindahan dari 1 activity ke activity lainnya
+        btnHitungNilai.setOnClickListener{
+            var pindah = Intent(this,HitungNilaiMahasiswa::class.java)
             startActivity(pindah)
         }
     }
