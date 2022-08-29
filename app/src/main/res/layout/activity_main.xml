@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/helloWorldMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Hello World!"/>
+
+    <TextView
+        android:id="@+id/txthasil2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/helloWorldMain"
+        android:layout_centerHorizontal="true"
+        android:text="Hasil 2"/>
+
+    <Button
+        android:id="@+id/buttonMain"
+        android:layout_marginLeft="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Klik Saya 1"/>
+
+    <Button
+        android:id="@+id/buttonMain2"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Klik Saya 2"/>
+
+    <Button
+        android:id="@+id/buttonMain3"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Klik Saya 3"/>
+
+    <EditText
+        android:id="@+id/inputNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Nama"
+        android:layout_below="@id/txthasil2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:textAllCaps="false"
+        android:layout_below="@id/inputNama"
+        android:layout_centerHorizontal="true"
+
+        />
+    <TextView
+        android:id="@+id/textNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INI NAMA ANDA"
+        android:layout_below="@id/btnSimpan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        />
+    <Button
+        android:id="@+id/pindahKeHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pindah Ke Home"
+        android:layout_below="@id/btnSimpan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+        />
+
+</RelativeLayout>
