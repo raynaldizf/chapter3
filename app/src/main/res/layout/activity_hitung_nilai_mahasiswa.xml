@@ -1,9 +1,274 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HitungNilaiMahasiswa">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarRataRataMahasiswa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6200ED">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/headerTittle"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Menghitung Nilai Akhir Mahasiswa"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/container1"
+        android:layout_below="@id/toolbarRataRataMahasiswa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
+            android:id="@+id/txtNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama\t\t\t\t\t\t\t :"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+
+
+            />
+        <EditText
+            android:id="@+id/inputNama"
+            android:layout_toRightOf="@id/txtNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+
+            />
+        <TextView
+            android:id="@+id/txtNim"
+            android:layout_below="@id/txtNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIM\t\t\t\t\t\t\t\t\t\t :"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+
+            />
+        <EditText
+            android:id="@+id/inputNim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txtNim"
+            android:layout_below="@id/txtNama"
+            android:inputType="phone"
+
+
+            />
+        <TextView
+            android:id="@+id/txtNilaiUas"
+            android:layout_below="@id/txtNim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nilai UAS\t\t\t\t :"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+
+            />
+        <EditText
+            android:id="@+id/inputUas"
+            android:layout_below="@id/txtNim"
+            android:layout_toRightOf="@id/txtNilaiUas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+
+
+            />
+        <TextView
+            android:id="@+id/txtNilaiUts"
+            android:layout_below="@id/txtNilaiUas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nilai UTS\t \t\t\t :"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+
+            />
+        <EditText
+            android:id="@+id/inputUts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputUas"
+            android:layout_toRightOf="@id/txtNilaiUts"
+            android:inputType="phone"
+
+
+            />
+        <TextView
+            android:id="@+id/txtNilaiTugas"
+            android:layout_below="@id/txtNilaiUts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nilai Tugas\t :"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+
+            />
+        <EditText
+            android:id="@+id/inputTugas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputUts"
+            android:layout_toRightOf="@id/txtNilaiTugas"
+            android:inputType="phone"
+
+
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container2"
+        android:layout_below="@id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnHitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:text="Hitung"
+            android:textAllCaps="false"
+
+            />
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_toRightOf="@id/btnHitung"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:textAllCaps="false"
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container3"
+        android:layout_below="@id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp">
+
+        <!--        OUTPUT    -->
+        <TextView
+            android:id="@+id/outputNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEST"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:id="@+id/outputNim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outputNama"
+            android:text="TEST"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/outputUas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outputNim"
+            android:text="TEST"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/outputUts"
+            android:layout_below="@id/outputUas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEST"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/outputTugas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outputUts"
+            android:text="TEST"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/outputTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outputTugas"
+            android:text="TEST"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/outputRataRata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outputTotal"
+            android:text="TEST"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/outputNilaiHuruf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outputRataRata"
+            android:text="TEST"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/outputStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outputNilaiHuruf"
+            android:text="TEST"
+            android:textSize="20sp" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
