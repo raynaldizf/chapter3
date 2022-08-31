@@ -39,7 +39,7 @@ class KalkulatorBMI : AppCompatActivity() {
             var inUmur = inputUmur.text.toString().toDouble()
             var inTinggi = inputTinggiBadan.text.toString().toDouble()
             var inBerat = inputBeratBadan.text.toString().toDouble()
-            var jumlah = (inBerat / ( inTinggi * inTinggi ))
+            var jumlah = inBerat/((inTinggi*inTinggi)*0.01)*100
 
             if (jumlah < 16.0){
                 outputUmur.text = "Umur anda : $inUmur tahun"
