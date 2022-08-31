@@ -169,9 +169,9 @@
             android:id="@+id/btnHitung"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
             android:text="Hitung"
             android:textAllCaps="false"
-            android:layout_marginLeft="90dp"
 
             />
         <Button
@@ -200,11 +200,10 @@
             android:id="@+id/textHasil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="HASIL : "
+            android:layout_marginBottom="20dp"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_marginBottom="20dp"
 
             />
 
@@ -214,7 +213,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textHasil"
-            android:text="TEST"
             android:textSize="20sp" />
 
         <TextView
@@ -222,14 +220,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/outputUmur"
-            android:text="TEST"
             android:textSize="20sp" />
         <TextView
             android:id="@+id/outputBeratBadan"
             android:layout_below="@id/outputTinggi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TEST"
             android:textSize="20sp"
             />
 
@@ -237,8 +233,7 @@
             android:id="@+id/outputHasilBmi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/outputTinggi"
-            android:text="TEST"
+            android:layout_below="@+id/outputBeratBadan"
             android:textSize="20sp" />
 
         <TextView
@@ -246,7 +241,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/outputHasilBmi"
-            android:text="TEST"
             android:textSize="20sp" />
 
 
