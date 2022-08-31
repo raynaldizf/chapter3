@@ -200,7 +200,6 @@
             android:id="@+id/outputNama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TEST"
             android:textSize="20sp"
 
             />
@@ -209,7 +208,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/outputNama"
-            android:text="TEST"
             android:textSize="20sp" />
 
         <TextView
@@ -217,14 +215,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/outputNim"
-            android:text="TEST"
             android:textSize="20sp" />
         <TextView
             android:id="@+id/outputUts"
             android:layout_below="@id/outputUas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TEST"
             android:textSize="20sp"
             />
 
@@ -233,7 +229,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/outputUts"
-            android:text="TEST"
             android:textSize="20sp" />
 
         <TextView
@@ -241,28 +236,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/outputTugas"
-            android:text="TEST"
             android:textSize="20sp" />
         <TextView
             android:id="@+id/outputRataRata"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/outputTotal"
-            android:text="TEST"
             android:textSize="20sp" />
         <TextView
             android:id="@+id/outputNilaiHuruf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/outputRataRata"
-            android:text="TEST"
             android:textSize="20sp" />
         <TextView
             android:id="@+id/outputStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/outputNilaiHuruf"
-            android:text="TEST"
             android:textSize="20sp" />
 
 
